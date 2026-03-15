@@ -197,6 +197,10 @@ a.contact__detail-value:hover {
   margin-top: 4px;
 }
 
+[data-theme="light"] .contact__submit {
+  color: #fff;
+}
+
 .contact__submit:hover:not(:disabled) {
   background: var(--accent-light);
   transform: translateY(-2px);
@@ -224,6 +228,10 @@ a.contact__detail-value:hover {
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
+}
+
+[data-theme="light"] .contact__success-icon {
+  color: #fff;
 }
 
 .contact__success h4 {

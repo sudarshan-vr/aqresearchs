@@ -5,7 +5,20 @@
 }
 
 [data-theme="light"] .contact-bar {
-  background: #1A1714;
+  background: var(--bg-secondary);
+}
+
+[data-theme="light"] .contact-bar__item span:first-child {
+  color: var(--text-muted);
+}
+
+[data-theme="light"] .contact-bar__item a,
+[data-theme="light"] .contact-bar__item span:last-child {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .contact-bar__item {
+  border-right: 1px solid var(--border);
 }
 
 .contact-bar__inner {
@@ -225,6 +238,10 @@
   color: #fff;
 }
 
+[data-theme="light"] .contact-success__reset:hover {
+  color: #fff;
+}
+
 /* Offices */
 .contact-offices__title {
   font-family: var(--font-display);
@@ -335,7 +352,7 @@
 
 @media (max-width: 600px) {
   .contact-bar__inner { grid-template-columns: 1fr; }
-  .contact-bar__item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .contact-bar__item { border-right: none; border-bottom: 1px solid var(--border); }
   .contact-form-wrap { padding: 28px 20px; }
   .contact-form__row { grid-template-columns: 1fr; }
   .contact-offices__grid { grid-template-columns: 1fr; }

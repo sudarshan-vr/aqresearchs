@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -25,6 +26,7 @@ function AppInner({ theme, toggleTheme }) {
         <Route path="/services" element={<ServicesPage />} />
       </Routes>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

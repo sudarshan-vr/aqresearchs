@@ -106,6 +106,10 @@
   text-align: center;
 }
 
+[data-theme="light"] .about-overview__badge {
+  color: #fff;
+}
+
 .about-overview__badge span {
   display: block;
   font-family: var(--font-display);
@@ -387,6 +391,10 @@
 
 .bio-card__toggle:hover {
   background: var(--accent);
+  color: #fff;
+}
+
+[data-theme="light"] .bio-card__toggle:hover {
   color: #fff;
 }
 

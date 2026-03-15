@@ -82,6 +82,10 @@
   color: #fff;
 }
 
+[data-theme="light"] .hero__btn--primary {
+  color: #fff;
+}
+
 .hero__btn--primary:hover {
   background: var(--accent-light);
   transform: translateY(-2px);

@@ -37,6 +37,10 @@
   color: #fff;
 }
 
+[data-theme="light"] .portfolio__filter--active {
+  color: #fff;
+}
+
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

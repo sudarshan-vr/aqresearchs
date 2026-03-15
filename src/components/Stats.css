@@ -51,7 +51,15 @@
 }
 
 [data-theme="light"] .stats {
-  background: #1A1714;
+  background: var(--bg-secondary);
+}
+
+[data-theme="light"] .stats__label {
+  color: var(--text-muted);
+}
+
+[data-theme="light"] .stats__item:not(:last-child)::after {
+  background: var(--border);
 }
 
 .stats__label {

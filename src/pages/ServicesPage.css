@@ -82,6 +82,10 @@
   border-radius: 2px;
 }
 
+[data-theme="light"] .svc-feature__badge {
+  color: #fff;
+}
+
 .svc-feature__desc {
   font-size: 15px;
   color: var(--text-secondary);
@@ -203,6 +207,10 @@
 
 .svc-methodology__tab--active {
   background: var(--accent);
+  color: #fff;
+}
+
+[data-theme="light"] .svc-methodology__tab--active {
   color: #fff;
 }
 

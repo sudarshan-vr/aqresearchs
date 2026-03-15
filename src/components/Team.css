@@ -87,6 +87,10 @@
   font-weight: 300;
 }
 
+[data-theme="light"] .team-card__desc {
+  color: rgba(255,255,255,0.9);
+}
+
 .team-card__linkedin {
   width: 30px;
   height: 30px;
@@ -97,6 +101,10 @@
   justify-content: center;
   color: #fff;
   transition: background 0.2s;
+}
+
+[data-theme="light"] .team-card__linkedin {
+  color: #fff;
 }
 
 .team-card__linkedin:hover {
@@ -143,6 +151,10 @@
 
 .team__read-more:hover {
   background: var(--accent);
+  color: #fff;
+}
+
+[data-theme="light"] .team__read-more:hover {
   color: #fff;
 }
 
