@@ -1,0 +1,140 @@
+.home-cta {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-cta::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.04;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.home-cta__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.home-cta__title {
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+  font-weight: 300;
+  margin: 12px 0 16px;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.home-cta__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.home-cta__sub {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 400px;
+  margin-bottom: 36px;
+}
+
+.home-cta__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Info card */
+.home-cta__info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-cta__info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.home-cta__info-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.home-cta__info-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 3px;
+}
+
+.home-cta__info-value {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+a.home-cta__info-value:hover {
+  color: var(--accent);
+}
+
+.home-cta__offices {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.home-cta__offices-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.home-cta__offices-tag {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .home-cta__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-cta__info-card { padding: 24px 20px; }
+}
