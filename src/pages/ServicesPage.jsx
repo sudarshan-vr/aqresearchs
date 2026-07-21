@@ -145,7 +145,7 @@ export default function ServicesPage() {
         <div className="container svc-feature__inner">
           <div className="svc-feature__img-col">
             <div className="svc-feature__img-wrap">
-              <img src="/assets/mar.webp" alt="Digital Marketing" className="svc-feature__img"
+              <img src="/assets/market.png" alt="Digital Marketing" className="svc-feature__img"
                 onError={(e) => {
                   if (e.target.src.indexOf('aqresearchs.com') === -1) {
                     e.target.src = '/mar.webp';
