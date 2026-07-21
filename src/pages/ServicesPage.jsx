@@ -148,7 +148,7 @@ export default function ServicesPage() {
               <img src="/assets/market.png" alt="Digital Marketing" className="svc-feature__img"
                 onError={(e) => {
                   if (e.target.src.indexOf('aqresearchs.com') === -1) {
-                    e.target.src = '/mar.webp';
+                    e.target.src = '/market.png';
                   } else {
                     e.target.style.display = 'none';
                   }
