@@ -26,14 +26,6 @@ export const teamData = [
     languages: ['English', 'Hindi', 'Telugu', 'Tamil'],
   },
   {
-    name: 'Hemath Kumar',
-    role: 'Operation Director',
-    shortDesc: 'Defines clear operational directions to align marketing activities with business objectives.',
-    fullBio: `Hemath Kumar leads operational direction at AQ Research, aligning all marketing activities with client business objectives and organizational goals. He brings structured thinking and strong coordination skills to multi-project environments, ensuring efficient delivery across the organization.`,
-    img: `${BASE}/hemath.png`,
-    fallbackImg: `${REMOTE}/hemath.png`,
-  },
-  {
     name: 'Jemsy N K',
     role: 'Operation Manager',
     shortDesc: '15 years in market research. Ex-GfK, Hansa Research, Market Xcel. 10+ years in political research.',
